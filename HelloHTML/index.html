@@ -1,46 +1,53 @@
+<!DOCTYPE html>
 <html>
-<!-- root of DOM -->
-  <head>
-    <center><title>My Cool Page!</title></center>
-  </head>
+<head>
+    <title>My Cool Page!</title>
+    <style>
+        /* CSS for centering the content */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
 
-  <body>
-    <!-- All the content of the webpage -->
-    <h1> NYUAD Freshmen Starter Pack  :)</h1>
-    <br/>
-    <!-- images -->
-    <img src="campus.jpeg" alt-text="our pretty campus" />
-    <h6> Are you a freshmen? Don't worry, we got you! </h6>
-    <p> Here you can find resources and supports for NYUAD community. </b>.</p>
-    <p> Learn about the daily life at NYUAD and connect to upperclassmen. <i>paragraph</i> of text.</p>
+        #centered-content {
+            text-align: center;
+        }
+    </style>
+</head>
 
-    <ol>
-      <li> Problem 1</li>
-      <li> Problem 2</li>
-      <li> Problem 3</li>
-    </ol>
+<body>
+    <div id="centered-content">
+        <!-- All the content of the webpage -->
+        <h1>NYUAD Freshmen Starter Pack :)</h1>
+        <br/>
+        <!-- Image centered in the div -->
+        <img src="campus.jpeg" alt="our pretty campus" />
+        <h6>Are you a freshman? Don't worry, we got you!</h6>
+        <p>Here you can find resources and support for NYUAD community.</p>
+        <p>Learn about the daily life at NYUAD and connect to upperclassmen. <i>paragraph</i> of text.</p>
 
-    <ul>
-      <li>item 1</li>
-      <li>item 2</li>
-      <li>item 3</li>
-    </ul>
+        <ol>
+            <li>Problem 1</li>
+            <li>Problem 2</li>
+            <li>Problem 3</li>
+        </ol>
 
-    <!-- generic -->
-    <div id="my-unique-id">
-      a genertic division/block in the <span>page</span>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+
+        <!-- Generic -->
+        <div id="my-unique-id">
+            A generic division/block in the <span>page</span>
+        </div>
+
+        <!-- Links -->
+        <a href="https://www.instagram.com/nyuadstudentlife/">Visit Instagram Page</a>
+        <a href="https://www.facebook.com/groups/154302261314403">Join ROR: Room of Requirement</a>
     </div>
-
-    <!-- links -->
-    <a href="https://www.instagram.com/nyuadstudentlife/"> Visit Instagram Page </a>
-    <a href="https://www.facebook.com/groups/154302261314403"> Join ROR: Room of Requirement </a>
-
-    <br/>
-    <!-- images -->
-    <img src="cat-cat-dance.gif" alt-text="what is the image of" />
-    <img src="https://media.istockphoto.com/photos/european-short-haired-cat-picture-id1072769156?k=20&m=1072769156&s=612x612&w=0&h=k6eFXtE7bpEmR2ns5p3qe_KYh098CVLMz4iKm5OuO6Y=" />
-    <!-- image as link -->
-    <a href="http://duckduckgo.com"><img src="kitty.jpg" alt-text="what is the image of" /></a>
-
-  </body>
+</body>
 </html>
