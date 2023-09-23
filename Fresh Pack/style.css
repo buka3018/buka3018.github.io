@@ -1,0 +1,343 @@
+/* Resetting default margin and line-height for the body */
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+/* Define global CSS variables using :root */
+:root {
+    /* Font family variables */
+    --font-lora: Lora;
+    --font-spartan: Spartan;
+
+    /* Font size variables */
+    --font-size-xs: 16px;
+    --font-size-md: 19px;
+    --font-size-lg: 23px;
+
+    /* Color variables */
+    --color-white: #fff;
+    --color-gray-100: #020202;
+
+    /* Border radius variables */
+    --br-8xs: 5px;
+}
+
+
+/* Styles for the home page container */
+.home_page {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; /* Enable scrolling when content exceeds viewport height */
+    text-align: left;
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-100);
+    font-family: var(--font-lora);
+}
+
+/* Styling for the NYUAD Freshman Starter Pack heading */
+.nyuad-freshman-starter {
+    position: absolute;
+    top: 29px;
+    left: 124px;
+}
+
+/* Styling for the header section */
+/* .header {
+    position: fixed;
+    width: 1440px;
+    height: 80px;
+    font-size: 20px;
+    color: #f8f9fa;
+    font-family: var(--font-spartan);
+} */
+
+
+/* Styling for the header section */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the viewport */
+    height: 80px;
+    font-size: 20px;
+    color: #f8f9fa;
+    font-family: var(--font-spartan);
+    background-color: #58068C;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+
+
+/* Styles for the blog slider and header background */
+.blog-slider,
+.header-bg {
+    position: absolute;
+    top: 0;
+    width: 100vw; /* 100% of the viewport width */
+}
+
+/* Styling for the header background */
+.header-bg {
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.3); Semi-transparent background color */
+    height: 80px;
+    background-color: #58068C;
+}
+
+/* Styling for the main image */
+.image-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% of the viewport width */
+    height: 700px; /* Calculate the height to maintain the aspect ratio */
+    object-fit: cover;
+}
+
+/* Styling for the blog slider section */
+.blog-slider {
+    /* height: 676px; */
+    width: 1000px;
+    font-size: 60px;
+    color: var(--color-gray-100);
+}
+
+/* Styling for the "Welcome to College" text */
+.welcome-to-college {
+    text-decoration: none;
+    top: 530px;
+    left: 124px;
+    width: 660px;
+    background-color: #FFFF00;
+    padding-left: 3px;
+    font-weight: bold;
+    color:#020202;
+}
+
+/* Common styles for some elements */
+.a-heartfelt-letter,
+.read-more,
+.welcome-to-college {
+    position: absolute;
+    display: inline-block;
+    backdrop-filter: blur(100px);
+}
+
+/* Styling for "A Heartfelt Letter" text */
+.a-heartfelt-letter {
+    top: 490px;
+    left: 124px;
+    font-size: var(--font-size-md);
+    line-height: 20px;
+    width: 19.5vw;
+    background-color: #FFFF00;
+    padding-left: 3px;
+}
+
+/* Styling for "Read more" text */
+.read-more {
+    top: 750px;
+    left: 124px;
+    font-size: var(--font-size-lg);
+    color: var(--color-white);
+    width: 1440px;
+    background-color: #58068C;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+/* Common styles for blog images and header */
+.blog-1-child,
+.header {
+    position: absolute;
+    top: 50; /* Fixed position from top */
+    left: 800;
+}
+
+/* Styling for individual blog images */
+.blog-1-child {
+    border-radius: var(--br-8xs);
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Styling for some text elements in the blog sections */
+.how-nyuad-became,
+.navigate-the-campus {
+    font-size: var(--font-size-lg);
+    position: absolute;
+    top: 325px;
+    left: 0;
+    line-height: 25px;
+    display: inline-block;
+    width: 290px;
+    height: 30px;
+}
+
+.how-nyuad-became {
+    font-weight: bold;
+    color:#020202;
+}
+
+/* Styling for the "Navigate the Campus" text */
+.navigate-the-campus {
+    top: 360px;
+    font-size: var(--font-size-md);
+    line-height: 20px;
+    width: 350px;
+    height: 80px;
+}
+
+/* Styling for the "Dealing with the Post-Marhaba Comedown" text */
+.dealing-with-the,
+.the-post-marhaba {
+    font-size: var(--font-size-lg);
+    position: absolute;
+    top: 325px;
+    left: 0;
+    line-height: 25px;
+    display: inline-block;
+    width: 430px;
+    height: 30px;
+}
+
+.dealing-with-the {
+    font-weight: bold;
+    color:#020202;
+}
+
+/* Styling for the "Navigating the Post-Marhaba Transition" text */
+.the-post-marhaba {
+    position: absolute;
+    top: 360px;
+    font-size: var(--font-size-md);
+    line-height: 20px;
+    width: 350px;
+    height: 45.88px;
+}
+
+/* Styling for the "Finding Community at NYU Abu Dhabi" text */
+.finding-community-at,
+.diversity-dicovery {
+    font-size: var(--font-size-lg);
+    position: absolute;
+    top: 325px;
+    left: 0;
+    line-height: 25px;
+    display: inline-block;
+    width: 400px;
+    height: 30px;
+}
+
+.finding-community-at {
+    font-weight: bold;
+    color:#020202;
+}
+
+
+/* Styling for the first blog section */
+.blog-1 {
+    position: absolute;
+    top: 850px; /* Adjust the top position for even distribution */
+    left: 124px; /* Adjust the left position for even distribution */
+    width: calc((100vw - 248px) / 3); /* Calculate the width for even distribution */
+    height: 392.9px;
+}
+
+/* Styling for the second blog section */
+.blog-2 {
+    position: absolute;
+    top: 850px; /* Adjust the top position for even distribution */
+    left: calc(124px + ((100vw - 248px) / 3) + 40px); /* Adjust the left position for even distribution */
+    width: calc((100vw - 248px) / 3); /* Calculate the width for even distribution */
+    height: 392.9px;
+}
+
+/* Styling for the third blog section */
+.blog-3 {
+    position: absolute;
+    top: 850px; /* Adjust the top position for even distribution */
+    left: calc(124px + 2 * ((100vw - 248px) / 3) + 2 * 40px); /* Adjust the left position for even distribution */
+    width: calc((100vw - 248px) / 3); /* Calculate the width for even distribution */
+    height: 392.9px;
+}
+
+
+.custom-underline {
+    border-bottom: 50px solid #58068C; /* Customize the underline style */
+    margin-top: -50px; /* Adjust the distance (offset) from the text */
+    display: block; /* Ensures the underline is a separate block element */
+  }
+  
+/* Add styles for the arrow icon */
+.arrow-icon {
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: #58068C;
+    font-size: 40px; /* Set the initial size of the arrow */
+    transition: font-size 0.3s, border-radius 0.3s; /* Add a smooth transition effect for size and border-radius change */
+    border-radius: 80%; /* Make the background round by setting border-radius to 50% */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+
+/* Style the video container */
+.custom-video {
+    width: 480px; /* Set the width as needed */
+    height: ((1920 / 1080) * 480) px; /* Ensure the video fits within its container */
+    position: absolute;
+    justify-content: center; /* Center horizontally */
+    top: 1475px;
+    left: 36vw;
+  }
+
+  
+  /* Style the video controls */
+  .custom-video::media-controls {
+    background-color: #333; /* Background color for controls */
+    color: #fff; /* Text color for controls */
+    opacity: 0.7; /* Opacity of controls when not hovered */
+    transition: opacity 0.2s; /* Smooth opacity transition */
+  }
+  
+  /* Style the video controls on hover */
+  .custom-video:hover::media-controls {
+    opacity: 1; /* Show controls at full opacity on hover */
+  }
+
+/* Style the video background */
+.video-bg {
+    background-color: #000; /* Background color (change to your desired color) */
+    background-image: url('cover.jpg'); /* Background image (replace with your image path) */
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center center; /* Center the background image horizontally and vertically */
+    position: absolute; /* Position it absolutely within its container */
+    top: 1400px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind other content */
+  }
+
+/* Style the "Watch" text */
+.watch {
+    position: absolute;
+    top: 1300px;
+    left: 124px;
+    width: 1440px;
+    background-color: #58068C;
+    font-size: var(--font-size-lg); 
+    color: var(--color-white); 
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  
