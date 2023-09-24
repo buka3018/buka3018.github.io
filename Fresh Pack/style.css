@@ -45,17 +45,6 @@ body {
 }
 
 /* Styling for the header section */
-/* .header {
-    position: fixed;
-    width: 1440px;
-    height: 80px;
-    font-size: 20px;
-    color: #f8f9fa;
-    font-family: var(--font-spartan);
-} */
-
-
-/* Styling for the header section */
 .header {
     position: fixed;
     top: 0;
@@ -68,8 +57,6 @@ body {
     background-color: #58068C;
     z-index: 1000; /* Ensure it appears above other content */
 }
-
-
 
 /* Styles for the blog slider and header background */
 .blog-slider,
