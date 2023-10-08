@@ -56,10 +56,10 @@ img {
 }
 
 /* Position the images overlay on top of each other */
-#frame-1-img,
 #frame-1-text1,
-#frame-1-text2 {
-    position: absolute;
+#frame-1-text2,
+#frame-2-text {
+	position: absolute;
 }
 
 #frame-2-img,
